@@ -1,0 +1,16 @@
+.Grid{
+    display: grid;
+}
+
+.HOME{
+    background-color: red; 
+}
+
+.SELECTCAR{
+    background-color: green;
+}
+
+.RECAPITULATE{
+    background-color: blue; 
+}
+

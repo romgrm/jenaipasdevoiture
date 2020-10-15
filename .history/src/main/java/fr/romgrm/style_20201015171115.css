@@ -1,0 +1,17 @@
+.Grid{
+    display: grid;
+    height: 1920px; 
+}
+
+.HOME{
+    background-color: red; 
+}
+
+.SELECTCAR{
+    background-color: green;
+}
+
+.RECAPITULATE{
+    background-color: blue; 
+}
+

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#CONTAINER{
+    height: 100%;
+    width: 100%;
+}
+
+
+#Section{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow; 
+}
+.HOME{
+    background-color: red;
+    margin: 0;
+    padding: 0;  
+}
+
+.SELECTCAR{
+    background-color: green;
+}
+
+.RECAPITULATE{
+    background-color: blue; 
+}
+

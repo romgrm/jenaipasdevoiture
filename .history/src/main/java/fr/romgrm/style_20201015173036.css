@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Container{
+    margin: 0;
+    padding: 0;
+}
+
+.HOME{
+    background-color: red;
+    margin: 0;
+    padding: 0;  
+}
+
+.SELECTCAR{
+    background-color: green;
+}
+
+.RECAPITULATE{
+    background-color: blue; 
+}
+

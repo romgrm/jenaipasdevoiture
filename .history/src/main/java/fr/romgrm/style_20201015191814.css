@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+  color: white;
+  height: 100vh;
+  overflow: hidden;  
+  
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: inherit;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 0; 
+    z-index: 1; 
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    transition: 2s ease-in .5s;    
+   
+}
+
+.navbar ul li a:hover{
+    zoom: 1.1;    
+}
+
+
+
+
+Section{
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 100vh; /* vh = Viewport Height : permet de dimensioner par rapport à la taille de l'écran*/
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#LOCALISATION{
+    background-color: black;
+    margin: 0;
+    padding: 0;  
+    /*background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;*/
+}
+
+#LOCALISATION h2{
+
+}
+
+#LOCALISATION p{
+
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#SELECTCAR{
+    background-color: black;
+}
+
+#SELECTCAR h2{
+
+}
+
+#SELECTCAR p{
+    
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#RECAPITULATE{
+    background-color: black; 
+}
+
+#RECAPITULATE h2{
+
+}
+
+#RECAPITULATE p{
+
+}
