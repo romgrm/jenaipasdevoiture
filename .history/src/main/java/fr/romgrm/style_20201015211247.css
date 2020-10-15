@@ -23,7 +23,7 @@ body{
 }
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5); 
+   /* background-color: rgba(0, 0, 0, 0.5); */
     position: fixed;
     top: 0; 
     z-index: 1; 
@@ -52,14 +52,22 @@ body{
 .navbar ul li a{
     color: white;
     text-decoration: none; 
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;    
    
 }
 
 .navbar ul li a:hover{
-     
+    transform : scale(5);
+ -moz-transform : scale(1.25);
+ -webkit-transform : scale(1.25);
+ -o-transform : scale(1.25);
+ -ms-transform : scale(1.25);
+    /*color: rgb(105, 105, 105); */   
 }
-
-
 
 
 
@@ -74,7 +82,6 @@ Section{
     align-items: center;
     /*SCROLL SNAP ALIGN*/
     scroll-snap-align: center;
-    /*background: url('https://source.unsplash.com/random/800x600') no-repeat center center/cover;*/
     
 }
 
@@ -87,7 +94,7 @@ Section{
     background-color: black;
     margin: 0;
     padding: 0;  
-    
+    /*background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;*/
 }
 
 #LOCALISATION h2{
@@ -99,57 +106,21 @@ Section{
 }
 
 #LOCALISATION ul{
-    position: relative; 
-    bottom: 150px;
     display: flex; 
+    background-color: red; 
     width: 100%;
     align-items: center;
     justify-content: center;
 }
 
 #LOCALISATION ul li{
-    margin: 20px 80px 20px 80px; 
+    margin: 10px 80px 10px 80px; 
     list-style-type: none;
-    
 }
-
-#LOCALISATION ul li a{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 700;
-    color: black;
-}
-
-/*
-
-#LOCALISATION ul li a:hover{
-    color: white;
-}*/
-
-
-.agence{
-    background-color: rgb(139, 44, 44);
-    padding: 10px 20px;
-    width: 100px; 
-    border-radius: 50px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-}
-
-#LOCALISATION ul li:hover a, .agence{
-    background-color: rgb(80, 133, 163); 
-    color: white;
-}
-
-   
-
 
 #LOCALISATION p{
 
 }
-
-
 
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

@@ -23,7 +23,7 @@ body{
 }
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5); 
+   /* background-color: rgba(0, 0, 0, 0.5); */
     position: fixed;
     top: 0; 
     z-index: 1; 
@@ -74,7 +74,6 @@ Section{
     align-items: center;
     /*SCROLL SNAP ALIGN*/
     scroll-snap-align: center;
-    /*background: url('https://source.unsplash.com/random/800x600') no-repeat center center/cover;*/
     
 }
 
@@ -87,7 +86,7 @@ Section{
     background-color: black;
     margin: 0;
     padding: 0;  
-    
+    background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;;
 }
 
 #LOCALISATION h2{
