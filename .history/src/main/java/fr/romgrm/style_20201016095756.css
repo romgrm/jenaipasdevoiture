@@ -100,8 +100,7 @@ Section{
 
 #LOCALISATION ul{
     position: relative; 
-    top: 100px;
-    z-index: 1;
+    bottom: 150px;
     display: flex; 
     width: 100%;
     align-items: center;
