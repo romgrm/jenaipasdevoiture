@@ -4,8 +4,6 @@
 }
 
 
-
-
 body{
   color: white;
   /* desactiver le scroll dans le body (pas oublier
@@ -80,7 +78,7 @@ Section{
     align-items: center;
     /*SCROLL SNAP ALIGN*/
     scroll-snap-align: center;
-    
+    background: url('./mercedes_retouchée.png') no-repeat center center/cover;
 
     
 }
@@ -93,23 +91,21 @@ Section{
 #LOCALISATION{
     background-color: black;
     margin: 0;
-    padding: 0; 
-     
+    padding: 0;  
     
 }
 
 #LOCALISATION h2{
     position: relative;
-    bottom: 100px;
+    top: 50px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800 bold ;
-    z-index: 1000;
 
 }
 
 #LOCALISATION ul{
     position: relative; 
-    bottom: 30px;
+    top: 100px;
     z-index: 1;
     display: flex; 
     width: 100%;
@@ -155,7 +151,7 @@ Section{
 
 
 #LOCALISATION p{
-    z-index: 1000;
+
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -171,11 +167,11 @@ Section{
 }
 
 #SELECTCAR h2{
-    z-index: 1000;
+
 }
 
 #SELECTCAR p{
-    z-index: 1000;
+    
 }
 
 
@@ -184,39 +180,26 @@ Section{
 
 #RECAPITULATE{
     background-color: black; 
-    z-index: 1000;
+    z-index: 1;
 }
 
 #RECAPITULATE h2{
-    z-index: 1000;
+
 }
 
 #RECAPITULATE p{
-    z-index: 1000; 
+
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*
+
 #LOCALISATION img{
     position: fixed;
     top: 300px; 
-    /*top: 80px; 
+    /*top: 80px; */
      
     margin: 0; 
     padding: 0;
     z-index: 0;
-}*/
-
-
-img{
-    /*background: url('./audi_2_retouchée.png') no-repeat center ;*/
-    position: fixed;
-    right: 0px;
-    /*top: 300px;*/
-    z-index: 0;
-    width: 500px;
-    height: 800px;
-
-    
 }

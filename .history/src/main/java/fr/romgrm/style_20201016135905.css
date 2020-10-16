@@ -4,15 +4,12 @@
 }
 
 
-
-
 body{
   color: white;
   /* desactiver le scroll dans le body (pas oublier
   de lui donner une taille sinon ça marche pas*/
   height: 100vh;
   overflow: hidden; 
-  
   
 }
 
@@ -61,7 +58,6 @@ body{
 
 .navbar ul li a:hover{
      zoom: 1.2; 
-     color: rgb(38, 94, 116);
      
 }
 
@@ -80,8 +76,7 @@ Section{
     align-items: center;
     /*SCROLL SNAP ALIGN*/
     scroll-snap-align: center;
-    
-
+    /*background: url('https://source.unsplash.com/random/800x600') no-repeat center center/cover;*/
     
 }
 
@@ -93,23 +88,21 @@ Section{
 #LOCALISATION{
     background-color: black;
     margin: 0;
-    padding: 0; 
-     
+    padding: 0;  
     
 }
 
 #LOCALISATION h2{
     position: relative;
-    bottom: 100px;
+    top: 50px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800 bold ;
-    z-index: 1000;
 
 }
 
 #LOCALISATION ul{
     position: relative; 
-    bottom: 30px;
+    top: 100px;
     z-index: 1;
     display: flex; 
     width: 100%;
@@ -128,8 +121,14 @@ Section{
     font-weight: 700;
     color: black;
     cursor: pointer; 
-    text-decoration: none;
 }
+
+
+/*
+#LOCALISATION ul li a:hover{
+    color: white;
+}*/
+
 
 .agence{
     background-color: rgb(255, 255, 255);
@@ -141,41 +140,48 @@ Section{
     justify-content: center;
 
 }
-.agence:hover {
-    background-color: rgb(38, 94, 116); 
-    cursor: pointer;
+.agence:hover{
+    background-color: blue; 
 }
-
-#LOCALISATION li:hover a{
+li a:hover{
     color:white; 
 }
-
+/*
+#LOCALISATION ul li:hover a, .agence{
+    background-color: rgb(80, 133, 163); 
+    color: white;
+}*/ 
 
    
 
 
 #LOCALISATION p{
-    z-index: 1000;
+
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
+#LOCALISATION img{
+    position: relative;
+    top: 80px; 
+    background-color: red; 
+    margin: 0; 
+    padding: 0;
+}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 
 #SELECTCAR{
-    background-color: black;
-    z-index: 1000;
+    background-color: red;
 }
 
 #SELECTCAR h2{
-    z-index: 1000;
+
 }
 
 #SELECTCAR p{
-    z-index: 1000;
+    
 }
 
 
@@ -183,40 +189,13 @@ Section{
 
 
 #RECAPITULATE{
-    background-color: black; 
-    z-index: 1000;
+    background-color: blue; 
 }
 
 #RECAPITULATE h2{
-    z-index: 1000;
+
 }
 
 #RECAPITULATE p{
-    z-index: 1000; 
-}
 
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*
-#LOCALISATION img{
-    position: fixed;
-    top: 300px; 
-    /*top: 80px; 
-     
-    margin: 0; 
-    padding: 0;
-    z-index: 0;
-}*/
-
-
-img{
-    /*background: url('./audi_2_retouchée.png') no-repeat center ;*/
-    position: fixed;
-    right: 0px;
-    /*top: 300px;*/
-    z-index: 0;
-    width: 500px;
-    height: 800px;
-
-    
 }

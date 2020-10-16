@@ -100,7 +100,7 @@ Section{
 
 #LOCALISATION h2{
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800 bold ;
     z-index: 1000;
@@ -109,7 +109,7 @@ Section{
 
 #LOCALISATION ul{
     position: relative; 
-    bottom: 30px;
+    bottom: 100px;
     z-index: 1;
     display: flex; 
     width: 100%;
@@ -209,14 +209,13 @@ Section{
 }*/
 
 
-img{
-    /*background: url('./audi_2_retouchée.png') no-repeat center ;*/
+.image{
+    background: url('./audi_2_retouchée.png') no-repeat center ;
     position: fixed;
-    right: 0px;
-    /*top: 300px;*/
+    top: 300px;
     z-index: 0;
-    width: 500px;
-    height: 800px;
+    height: 500px; 
+    width: 800px;
 
     
 }

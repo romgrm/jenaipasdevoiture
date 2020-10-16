@@ -100,16 +100,15 @@ Section{
 
 #LOCALISATION h2{
     position: relative;
-    bottom: 100px;
+    top: 50px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800 bold ;
-    z-index: 1000;
 
 }
 
 #LOCALISATION ul{
     position: relative; 
-    bottom: 30px;
+    top: 100px;
     z-index: 1;
     display: flex; 
     width: 100%;
@@ -155,7 +154,7 @@ Section{
 
 
 #LOCALISATION p{
-    z-index: 1000;
+
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -171,11 +170,11 @@ Section{
 }
 
 #SELECTCAR h2{
-    z-index: 1000;
+    z-index: 1;
 }
 
 #SELECTCAR p{
-    z-index: 1000;
+    z-index: 1;
 }
 
 
@@ -184,15 +183,15 @@ Section{
 
 #RECAPITULATE{
     background-color: black; 
-    z-index: 1000;
+    z-index: 1;
 }
 
 #RECAPITULATE h2{
-    z-index: 1000;
+    z-index: 1;
 }
 
 #RECAPITULATE p{
-    z-index: 1000; 
+    z-index: 1; 
 }
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -209,14 +208,11 @@ Section{
 }*/
 
 
-img{
-    /*background: url('./audi_2_retouchée.png') no-repeat center ;*/
+.image{
+    background: url('./mercedes_retouchée.png') no-repeat center ;
     position: fixed;
-    right: 0px;
-    /*top: 300px;*/
     z-index: 0;
+    height: 500px; 
     width: 500px;
-    height: 800px;
-
     
 }

@@ -1,4 +1,4 @@
-const titre = document.querySelector('.unique');
+const titre = document.querySelector('#LOCALISATION');
 
 const TL1 = new TimelineMax({paused: true});
 
