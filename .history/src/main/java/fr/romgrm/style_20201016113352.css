@@ -55,11 +55,10 @@ body{
     cursor: pointer;
    
 }
-/*
+
 .navbar ul li a:hover{
      zoom: 1.2; 
-     
-}*/
+}
 
 
 
@@ -120,7 +119,6 @@ Section{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     color: black;
-    cursor: pointer; 
 }
 
 /*
@@ -140,11 +138,11 @@ Section{
     justify-content: center;
 
 }
-/*
+
 #LOCALISATION ul li:hover a, .agence{
     background-color: rgb(80, 133, 163); 
     color: white;
-}*/
+}
 
    
 
