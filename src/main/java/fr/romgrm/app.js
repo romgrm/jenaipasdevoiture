@@ -1,7 +1,8 @@
 const navbar = document.querySelectorAll('.nav');
+const anim = document.querySelectorAll('.anim'); 
 const title = document.querySelector('.titre1');
 const capsule = document.querySelectorAll('.agence')
-const img = document.querySelector('img');
+const img = document.querySelector('#bmw');
 //const cars = document.querySelector('.animate'); 
 
 const TL1 = new TimelineMax({paused: true});
@@ -13,6 +14,7 @@ TL1
 .from(title, 2, {x: 50, opacity: 0}, '-=0.2') 
 .staggerFrom(capsule, 1, {x: -100, opacity: 0}, 0.2, '-=2')
 .from(img, 2, {x: 20, opacity:0}, '-=1.5')
+.staggerFrom(anim, 0.5, {y: -50, opacity: 0}, 0.2, '-=1.5')
 
 
 
