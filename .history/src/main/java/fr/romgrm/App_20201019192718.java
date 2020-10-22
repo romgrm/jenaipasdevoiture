@@ -21,12 +21,6 @@ public final class App {
 
     public static void main(String[] args) {
         Agence.creerAgenceNantes();
-        creerClientEtReserver(); 
-        
-    }
-
-    static void creerClientEtReserver(){
-        Client clientRiche = new Client("Tonton", "0001");   /*COMPREND PAS*/
-        Agence.reserverPremierVehicule(clientRiche);
+        System.out.println(Agence);
     }
 }

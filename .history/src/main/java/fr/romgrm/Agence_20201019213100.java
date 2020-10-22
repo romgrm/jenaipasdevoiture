@@ -57,16 +57,9 @@ public class Agence {
         Voiture grosPrix = new Voiture("Audi", "Rouge", 4, "essence", 70); 
         agenceNantes.ajouterVehicule(petitPrix); //on ajoute voiture "petitPrix", au stock véhicule, de l'agence de Nantes
         agenceNantes.ajouterVehicule(grosPrix);
-        //System.out.println(grosPrix);
+        System.out.println(grosPrix);
 
         // Afficher le stock de véhicules
-        agenceNantes.afficherStock();
-    }
-
-    static void reserverPremierVehicule(Client client){
-        Vehicule voiture = agenceNantes.stockDeVehicules.get(1); 
-        client.reservation = voiture; 
-        voiture.disponible = false; 
         agenceNantes.afficherStock();
     }
 }

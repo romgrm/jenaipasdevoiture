@@ -62,11 +62,4 @@ public class Agence {
         // Afficher le stock de véhicules
         agenceNantes.afficherStock();
     }
-
-    static void reserverPremierVehicule(Client client){
-        Vehicule voiture = agenceNantes.stockDeVehicules.get(1); 
-        client.reservation = voiture; 
-        voiture.disponible = false; 
-        agenceNantes.afficherStock();
-    }
 }

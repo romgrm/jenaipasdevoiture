@@ -28,45 +28,17 @@ public class Agence {
         this.stockDeVehicules.add(vehicule);  
     }
 
-    void afficherStock(){
-        System.out.println("Stock :");
-        for (Vehicule vehicule : stockDeVehicules) {
-            System.out.println(vehicule);
-            vehicule.disponible = true;                 /*QUESTIONS*/
-        }
-    }
-
     // Afficher notre agence 
     public String toString(){ 
         return "Localisation agence : " + this.nom + " Commercial : " + this.nomDuCommercial; /*QUESTIONS*/ 
     }
 
-    
+    // Créer l'agence de Nantes 
 
     static void creerAgenceNantes(){
-
-        // Créer l'agence de Nantes  et lui ajouter son adresse
-
         agenceNantes = new Agence("Agence de Nantes", "Romain"); 
         Adresse adresse = new Adresse("Rue du Taillis", 44000, "Nantes"); 
         agenceNantes.ajouterAdresse(adresse);
         System.out.println(agenceNantes); /*QUESTION*/ 
-
-        // Créer 2 voitures et les ajouter au stock
-        Voiture petitPrix = new Voiture("Dacia", "blanche", 5, "diesel", 50);
-        Voiture grosPrix = new Voiture("Audi", "Rouge", 4, "essence", 70); 
-        agenceNantes.ajouterVehicule(petitPrix); //on ajoute voiture "petitPrix", au stock véhicule, de l'agence de Nantes
-        agenceNantes.ajouterVehicule(grosPrix);
-        //System.out.println(grosPrix);
-
-        // Afficher le stock de véhicules
-        agenceNantes.afficherStock();
-    }
-
-    static void reserverPremierVehicule(Client client){
-        Vehicule voiture = agenceNantes.stockDeVehicules.get(1); 
-        client.reservation = voiture; 
-        voiture.disponible = false; 
-        agenceNantes.afficherStock();
     }
 }

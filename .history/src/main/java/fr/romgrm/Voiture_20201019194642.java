@@ -13,8 +13,4 @@ public class Voiture extends Vehicule{
         this.nivEnergie = 0; 
         this.kilometrage = 0;  
     }
-
-    public String toString(){
-        return "Voiture : " + this.marque + " / " + "Couleur : " + this.couleur + " / " + (this.disponible?"oui":"non"); 
-    }
 }

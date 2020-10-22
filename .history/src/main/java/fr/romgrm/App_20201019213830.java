@@ -26,7 +26,7 @@ public final class App {
     }
 
     static void creerClientEtReserver(){
-        Client clientRiche = new Client("Tonton", "0001");   /*COMPREND PAS*/
+        Client clientRiche = new Client("Tonton", "0001"); 
         Agence.reserverPremierVehicule(clientRiche);
     }
 }
