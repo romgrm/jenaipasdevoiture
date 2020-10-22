@@ -80,7 +80,7 @@ body{
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(255, 255, 255, 0.1); 
     position: fixed;
     top: 0; 
     z-index: 10; 
@@ -222,7 +222,445 @@ Section{
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+#SELECTCAR {
+    background-color: black;
+    z-index: 1000;
+}
 
+#SELECTCAR h1 {
+    position: relative; 
+    /* bottom: 50px; */
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    z-index: 9;    
+}
+
+#SELECTCAR span {
+    position: relative;
+    /* bottom: 30px; */
+    background-color: #fdad17;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    border-radius: 20px; 
+    padding : 5px 30px;
+    margin: 10px 20px;
+    font-size: 1.2rem;
+}
+/*//////////////////////////////////////////    GRID  //////////////////////////////////////////////////////////////////////////////////////////////*/
+.grid{
+    display: grid; 
+    height: 750px;
+    width: 900px;
+    position: relative;
+    top: 30px; 
+    /* grid-gap: 20px; */
+    grid-template: repeat(3, 1fr)  / repeat(2, 2fr);
+    grid-template-rows: 250px 250px 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*//////////////////////////////////////////    VEHICULE 1   //////////////////////////////////////////////////////////////////////////////////////////////*/
+.vehicule1{ 
+     transition: transform .5s ease;
+     border-radius: 10px; 
+}
+.vehicule1:hover{   
+    background-color: #fdad17;
+    box-shadow: 0px 0px 15px #303952;
+    transform: scale(1.02);
+}
+.vehicule1 h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 light;
+}
+.vehicule1 img{
+    height: 130px;
+}
+.vehicule1 ul{
+    position: relative;
+    bottom: 30px;
+}
+.vehicule1 ul .person{
+    height: 30px; 
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+.vehicule1 ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 95px;
+    top: 48px;
+}
+
+.vehicule1 ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 130px;
+    top: 82px;
+}
+
+.vehicule1 ul{
+    list-style: none;
+    
+}
+
+.vehicule1 li{
+    font-family: 'Thasadith', sans-serif;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 10px;
+
+}
+/*//////////////////////////////////////////    VEHICULE 2  //////////////////////////////////////////////////////////////////////////////////////////////*/
+.vehicule2{ 
+    transition: transform .5s ease;
+    border-radius: 10px; 
+}
+.vehicule2:hover{   
+   background-color: #fdad17;
+   box-shadow: 0px 0px 15px #303952;
+   transform: scale(1.02);
+}
+.vehicule2 h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 light;
+}
+.vehicule2 img{
+    height: 130px;
+}
+
+.vehicule2 ul{
+    position: relative;
+    bottom: 30px;
+}
+
+.vehicule2 ul .person{
+    height: 30px; 
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+.vehicule2 ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 95px;
+    top: 48px;
+}
+
+.vehicule2 ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 130px;
+    top: 82px;
+}
+
+.vehicule2 ul{
+    list-style: none;
+    
+}
+
+.vehicule2 li{
+    font-family: 'Thasadith', sans-serif;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+/*//////////////////////////////////////////    VEHICULE 3  //////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.vehicule3{ 
+    transition: transform .5s ease;
+    border-radius: 10px; 
+}
+.vehicule3:hover{   
+   background-color: #fdad17;
+   box-shadow: 0px 0px 15px #303952;
+   transform: scale(1.02);
+}
+.vehicule3 h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 light;
+}
+.vehicule3 img{
+    height: 130px;
+}
+.vehicule3 ul{
+    position: relative;
+    bottom: 30px;
+}
+.vehicule3 ul .person{
+    height: 30px; 
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+.vehicule3 ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 95px;
+    top: 48px;
+}
+
+.vehicule3 ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 130px;
+    top: 82px;
+}
+
+.vehicule3 ul{
+    list-style: none;
+    
+}
+
+.vehicule3 li{
+    font-family: 'Thasadith', sans-serif;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+/*//////////////////////////////////////////    VEHICULE 4  //////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.vehicule4{ 
+    transition: transform .5s ease;
+    border-radius: 10px; 
+}
+.vehicule4:hover{   
+   background-color: #fdad17;
+   box-shadow: 0px 0px 15px #303952;
+   transform: scale(1.02);
+}
+.vehicule4 h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 light;
+}
+.vehicule4 img{
+    height: 130px;
+}
+.vehicule4 ul{
+    position: relative;
+    bottom: 30px;
+}
+.vehicule4 ul .person{
+    height: 30px; 
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+.vehicule4 ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 95px;
+    top: 48px;
+}
+
+.vehicule4 ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 130px;
+    top: 82px;
+}
+
+.vehicule4 ul{
+    list-style: none;
+    
+}
+
+.vehicule4 li{
+    font-family: 'Thasadith', sans-serif;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+/*//////////////////////////////////////////    VEHICULE 5  //////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.vehicule5{ 
+    transition: transform .5s ease;
+    border-radius: 10px; 
+}
+.vehicule5:hover{   
+   background-color: #fdad17;
+   box-shadow: 0px 0px 15px #303952;
+   transform: scale(1.02);
+}
+.vehicule5 h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 light;
+}
+.vehicule5 img{
+    height: 130px;
+}
+.vehicule5 ul{
+    position: relative;
+    bottom: 30px;
+}
+.vehicule5 ul .person{
+    height: 30px; 
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+.vehicule5 ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 95px;
+    top: 48px;
+}
+
+.vehicule5 ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 130px;
+    top: 82px;
+}
+
+.vehicule5 ul{
+    list-style: none;
+    
+}
+
+.vehicule5 li{
+    font-family: 'Thasadith', sans-serif;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+/*//////////////////////////////////////////    VEHICULE 6  //////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.vehicule6{ 
+    transition: transform .5s ease;
+    border-radius: 10px; 
+}
+.vehicule6:hover{   
+   background-color: #fdad17;
+   box-shadow: 0px 0px 15px #303952;
+   transform: scale(1.02);
+}
+.vehicule6 h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300 light;
+}
+.vehicule6 img{
+    height: 130px;
+}
+.vehicule6 ul{
+    position: relative;
+    bottom: 30px;
+}
+.vehicule6 ul .person{
+    height: 30px; 
+    position: relative;
+    right: 60px;
+    top: 15px;
+}
+.vehicule6 ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 95px;
+    top: 48px;
+}
+
+.vehicule6 ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 130px;
+    top: 82px;
+}
+
+.vehicule6 ul{
+    list-style: none;
+    
+}
+
+.vehicule6 li{
+    font-family: 'Thasadith', sans-serif;
+    position: relative;
+    bottom: 10px;
+    padding-bottom: 10px;
+
+}
+/*#SELECTCAR div{
+background-color: #fdad17;
+color: black;
+border-radius: 20px;
+height: 550px;
+width: 850px;
+position: relative;
+}*/
+
+
+/*  */
+/* #SELECTCAR div .cars{ */
+    /* padding-top: 7%; */
+    /* list-style: none; */
+    /* text-align: start; */
+/*  */
+/* } */
+/* #SELECTCAR div .cars li p{ */
+    /* padding-bottom: 40px; */
+    /* font-size: 1.4rem; */
+/* } */
+/*  */
+/*  */
+/*  */
+/* #SELECTCAR div .cars li img{ */
+    /* height: 100px; */
+    /* width: 150px; */
+/* } */
+/*  */
+/* #SELECTCAR div .cars li{ */
+/* display: flex; */
+/* justify-content: center; */
+/* padding-bottom: 10px; */
+/*  */
+/* } */
+/*  */
+/* #SELECTCAR div .cars{ */
+    /* flex-direction: column; */
+/*  */
+/*  */
+/* } */
+/*  */
+/* #SELECTCAR div .cars h3{ */
+    /* padding: 0px 80px; */
+    /* white-space: nowrap; */
+    /* text-align: left; */
+    /* font-family: Helvetica Neue; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    /* font-size: 60px; */
+    /* color: rgba(112,112,112,1); */
+/*  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -233,10 +671,10 @@ Section{
     z-index: 9;
 }
 
-#SELECTCAR h2{
-    background-color: red; 
-    z-index: 9;
-}
+/* #SELECTCAR h2{ */
+    /* background-color: red;  */
+    /* z-index: 9; */
+/* } */
 
 #SELECTCAR p{
     z-index: 9;
