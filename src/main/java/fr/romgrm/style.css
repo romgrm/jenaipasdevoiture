@@ -222,3 +222,8 @@ img{
 
     
 }
+
+footer{
+    background-color : red; 
+    z-index: 1000;
+}
