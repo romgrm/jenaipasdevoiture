@@ -1,3 +1,5 @@
+
+/*@media all and (min-width: 1024px){}*/
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +12,6 @@ body{
   de lui donner une taille sinon ça marche pas*/
   height: 100vh;
   overflow: hidden; 
-  
-  
 }
 
 .container{
@@ -71,13 +71,7 @@ body{
 }
 
 
-
-
-
-
-
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////   NAVBAR  /////////////////////////////////////////////////////////////////////////////////////*/
 
 .navbar{
     background-color: rgba(255, 255, 255, 0.1); 
@@ -124,7 +118,7 @@ body{
 }
 
 
-
+/*//////////////////////////////////////////////////////////// ALL SECTIONS /////////////////////////////////////////////////////////*/
 
 
 
@@ -152,13 +146,6 @@ Section{
      
     
 }
-
-
- 
- 
- 
- 
-
 
 #LOCALISATION h2{
     position: relative;
@@ -213,18 +200,12 @@ Section{
     color:white; 
 }
 
-
-   
-
-
-#LOCALISATION p{
-    /* z-index: 1000; */
-}
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #SELECTCAR {
     background-color: black;
     z-index: 1000;
+    
 }
 
 #SELECTCAR h1 {
@@ -594,6 +575,7 @@ a{
     padding-bottom: 10px;
 
 }
+
 /*#SELECTCAR div{
 background-color: #fdad17;
 color: black;
@@ -744,3 +726,163 @@ footer a {
 
     
 }
+
+/*////////////////////////////////////////////////////////////// IPAD /////////////////////////////////////////////////////////////////*/
+@media all and (min-width: 1000px){
+    #LOCALISATION h2{
+        bottom:400px;
+        color:blue; 
+    }
+    #LOCALISATION ul{
+        display: flex; 
+        flex-direction: row;
+        bottom: 200px; 
+    }
+
+    #SELECTCAR{
+       display: block;
+    }
+    #SELECTCAR h1 { 
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+    #SELECTCAR .grid{
+        margin: auto;
+    }
+}
+/*////////////////////////////////////////////////////////////// SMARTPHONE CLASSIC /////////////////////////////////////////////////////////////////*/
+@media all and (max-width: 900px){
+   
+/*///////////////// HOME //////////////*/   
+    #LOCALISATION ul{
+        display: contents;
+        align-items: center;
+        
+    }
+    #LOCALISATION h2{
+        font-size: 20px;
+    }
+
+    #bmw{
+        position: fixed;
+        right: 0px;
+        z-index: 0;
+        width: 300px;
+        height: 500px;   
+    }
+
+    .navbar{
+        font-size: 10px;
+    }
+
+    #rs{
+        display: none;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    /*/////////////////////VEHICULES/////////*/
+
+    #SELECTCAR{
+        display: block;
+    }
+    #SELECTCAR h1 { 
+        padding-top: 60px;
+        padding-bottom: 15px;   
+        /* bottom: 50px; */
+        font-family: 'Nunito', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        z-index: 9;    
+    }
+
+    #SELECTCAR span {
+        font-weight: 200;
+        padding : 5px 15px;
+        margin: 10px 15px;
+        font-size: 12px; 
+    }
+
+    .grid{
+        display: grid; 
+        height: 600px;
+        min-height: 300px;
+        width: 300px; 
+        /* max-height:400px; */
+        /* max-width: 350px; */
+        margin: auto; 
+        position: relative;
+        grid-gap: 10px;
+        grid-template: repeat(3, 1fr)  / repeat(2, 1fr);
+        grid-template-rows: 200px 200px 200px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 30px; 
+        overflow: scroll;
+    }
+
+    .grid h3{
+        font-size: 10px;
+    }
+    .grid img{
+        height: 50px;
+        padding-bottom: 0;
+    }
+
+    .grid ul{
+        padding-top: 30px;
+    }
+    .grid li{
+        font-size: 10px;
+    }
+    
+    .grid ul .person{ 
+        height: 20px;
+        position: relative;
+        right: 30px;
+        top: 10px;
+
+    }
+    .grid ul .porte{ 
+        height: 15px;
+        position: relative;
+        top: 30px;
+        right: 50px;
+    }
+    .grid ul .boite{ 
+        height: 15px;
+        position: relative; 
+        right: 70px;
+        top: 55px;
+    }
+
+    
+    
+}
+/*////////////////////////////////////////////////////////////// SMARTPHONE PETIT ECRAN /////////////////////////////////////////////////////////////////*/
+@media all and (max-height: 700px){
+    #LOCALISATION h2{
+        font-size: 15px;
+        bottom: 30px;
+    }
+    .grid{
+    height: 400px;
+    grid-template-rows: 133px 133px 133px;
+    }
+
+    .grid ul{
+        padding-top: 10px;
+    }
+
+    footer{
+        font-size: 7px;
+    }
+}
+
+
+
+
+
+
+
