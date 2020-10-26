@@ -1,5 +1,3 @@
-
-/*@media all and (min-width: 1024px){}*/
 *{
     margin: 0;
     padding: 0;
@@ -210,6 +208,7 @@ Section{
 
 #SELECTCAR h1 {
     position: relative; 
+    padding-top: 30px;
     /* bottom: 50px; */
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
@@ -231,13 +230,11 @@ Section{
 /*//////////////////////////////////////////    GRID  //////////////////////////////////////////////////////////////////////////////////////////////*/
 .grid{
     display: grid; 
-    height: 750px;
-    width: 900px;
+    height: 700px;
+    width: 1000px;
     position: relative;
-    top: 30px; 
-    /* grid-gap: 20px; */
+    top: 10px;  
     grid-template: repeat(3, 1fr)  / repeat(2, 2fr);
-    grid-template-rows: 250px 250px 250px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 30px; 
 }
@@ -248,7 +245,8 @@ a{
 /*//////////////////////////////////////////    VEHICULE 1   //////////////////////////////////////////////////////////////////////////////////////////////*/
 .vehicule1{ 
      transition: transform .5s ease;
-     border-radius: 10px; 
+     border-radius: 10px;
+     height: 230px; 
 }
 .vehicule1:hover{   
     background-color: #fdad17;
@@ -260,7 +258,8 @@ a{
     font-weight: 300 light;
 }
 .vehicule1 img{
-    height: 130px;
+    height: 100px;
+    top:10px;
 }
 .vehicule1 ul{
     position: relative;
@@ -302,6 +301,7 @@ a{
 .vehicule2{ 
     transition: transform .5s ease;
     border-radius: 10px; 
+    height: 230px; 
 }
 .vehicule2:hover{   
    background-color: #fdad17;
@@ -313,7 +313,7 @@ a{
     font-weight: 300 light;
 }
 .vehicule2 img{
-    height: 130px;
+    height: 100px;
 }
 
 .vehicule2 ul{
@@ -360,6 +360,7 @@ a{
 .vehicule3{ 
     transition: transform .5s ease;
     border-radius: 10px; 
+    height: 230px; 
 }
 .vehicule3:hover{   
    background-color: #fdad17;
@@ -371,7 +372,7 @@ a{
     font-weight: 300 light;
 }
 .vehicule3 img{
-    height: 130px;
+    height: 100px;
 }
 .vehicule3 ul{
     position: relative;
@@ -415,6 +416,7 @@ a{
 .vehicule4{ 
     transition: transform .5s ease;
     border-radius: 10px; 
+    height: 230px; 
 }
 .vehicule4:hover{   
    background-color: #fdad17;
@@ -426,7 +428,7 @@ a{
     font-weight: 300 light;
 }
 .vehicule4 img{
-    height: 130px;
+    height: 100px;
 }
 .vehicule4 ul{
     position: relative;
@@ -470,6 +472,7 @@ a{
 .vehicule5{ 
     transition: transform .5s ease;
     border-radius: 10px; 
+    height: 230px; 
 }
 .vehicule5:hover{   
    background-color: #fdad17;
@@ -481,7 +484,7 @@ a{
     font-weight: 300 light;
 }
 .vehicule5 img{
-    height: 130px;
+    height: 100px;
 }
 .vehicule5 ul{
     position: relative;
@@ -526,6 +529,7 @@ a{
 .vehicule6{ 
     transition: transform .5s ease;
     border-radius: 10px; 
+    height: 230px; 
 }
 .vehicule6:hover{   
    background-color: #fdad17;
@@ -537,7 +541,7 @@ a{
     font-weight: 300 light;
 }
 .vehicule6 img{
-    height: 130px;
+    height: 100px;
 }
 .vehicule6 ul{
     position: relative;
@@ -576,75 +580,9 @@ a{
 
 }
 
-/*#SELECTCAR div{
-background-color: #fdad17;
-color: black;
-border-radius: 20px;
-height: 550px;
-width: 850px;
-position: relative;
-}*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
-/*  */
-/* #SELECTCAR div .cars{ */
-    /* padding-top: 7%; */
-    /* list-style: none; */
-    /* text-align: start; */
-/*  */
-/* } */
-/* #SELECTCAR div .cars li p{ */
-    /* padding-bottom: 40px; */
-    /* font-size: 1.4rem; */
-/* } */
-/*  */
-/*  */
-/*  */
-/* #SELECTCAR div .cars li img{ */
-    /* height: 100px; */
-    /* width: 150px; */
-/* } */
-/*  */
-/* #SELECTCAR div .cars li{ */
-/* display: flex; */
-/* justify-content: center; */
-/* padding-bottom: 10px; */
-/*  */
-/* } */
-/*  */
-/* #SELECTCAR div .cars{ */
-    /* flex-direction: column; */
-/*  */
-/*  */
-/* } */
-/*  */
-/* #SELECTCAR div .cars h3{ */
-    /* padding: 0px 80px; */
-    /* white-space: nowrap; */
-    /* text-align: left; */
-    /* font-family: Helvetica Neue; */
-    /* font-style: normal; */
-    /* font-weight: normal; */
-    /* font-size: 60px; */
-    /* color: rgba(112,112,112,1); */
-/*  */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 
@@ -716,10 +654,8 @@ footer a {
 
 
 #bmw{
-    /*background: url('./audi_2_retouchée.png') no-repeat center ;*/
     position: fixed;
     right: 0px;
-    /*top: 300px;*/
     z-index: 0;
     width: 500px;
     height: 800px;
@@ -727,16 +663,17 @@ footer a {
     
 }
 
+
 /*////////////////////////////////////////////////////////////// IPAD /////////////////////////////////////////////////////////////////*/
-@media all and (min-width: 1000px){
+@media all and (max-width: 1025px){
     #LOCALISATION h2{
-        bottom:400px;
+        bottom:200px;
         color:blue; 
     }
     #LOCALISATION ul{
         display: flex; 
         flex-direction: row;
-        bottom: 200px; 
+        bottom: 50px; 
     }
 
     #SELECTCAR{
@@ -754,15 +691,20 @@ footer a {
 @media all and (max-width: 900px){
    
 /*///////////////// HOME //////////////*/   
-    #LOCALISATION ul{
-        display: contents;
-        align-items: center;
-        
-    }
+    
     #LOCALISATION h2{
+        position: relative;
+        padding-top: 100px; 
+        margin-bottom: 1px; 
+        
         font-size: 20px;
     }
 
+    #LOCALISATION ul{
+        display: contents;
+        align-items: center;
+    }
+    
     #bmw{
         position: fixed;
         right: 0px;
@@ -791,7 +733,6 @@ footer a {
     #SELECTCAR h1 { 
         padding-top: 60px;
         padding-bottom: 15px;   
-        /* bottom: 50px; */
         font-family: 'Nunito', sans-serif;
         font-weight: 600;
         font-size: 20px;
@@ -810,8 +751,6 @@ footer a {
         height: 600px;
         min-height: 300px;
         width: 300px; 
-        /* max-height:400px; */
-        /* max-width: 350px; */
         margin: auto; 
         position: relative;
         grid-gap: 10px;

@@ -1,0 +1,66 @@
+            <Section id="SELECTCAR">
+                <h1>Agence de Nantes</h1>
+                <span> voiture(s) dispo(s)</span>
+                <div>
+                    <h2>CARS</h2>
+                    <ul class="cars">
+                        <li> <img src="/Fichiers/clio-2.jpg" alt="">
+                            <h3>Clio 4</h3>
+                            <p> type :<br>
+                                Nombre de places :<br>
+                                kilométrage :</p>
+                        </li>
+                        <li><img src="/Fichiers/clio-2.jpg" alt="">
+                            <h3>Clio 4</h3>
+                            <p>type :<br>
+                                Nombre de places :<br>
+                                kilométrage :</p>
+                        </li>
+                        <li>
+                            <img src="/Fichiers/clio-2.jpg" alt="">
+                            <h3>Clio 4</h3>
+                            <p>type :<br>
+                                Nombre de places :<br>
+                                kilométrage :</p>
+                        </li>
+    
+    
+    
+                    </ul>
+                </div>
+    
+            </Section>
+    
+    
+    
+    
+            <Section id="RECAPITULATE">
+                <h1>Agence de Nantes</h1>
+                <span> voiture(s) dispo(s)</span>
+                <div>
+                    <ul class=validation>
+                        <img src="/Fichiers/clio-2.jpg" alt="">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint omnis debitis voluptatum
+                            maiores nihil digniss?</p>
+    
+                    </ul>
+    
+                    <button class="reserver">Réserver</button>
+    
+    
+                </div> 
+                <footer>
+    
+                <a>Contact</a>
+                <a>FAQ</a>
+                <a>Informations Générales</a>
+                <a>Mentions Légales</a>
+                <a>RGPD</a>
+    
+            </footer>
+    
+            </Section>
+    
+           
+    
+        </div>
