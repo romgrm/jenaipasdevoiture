@@ -214,7 +214,7 @@ Section{
     /*height: 700px;*/
     width: 1000px;
     position: relative;
-    top: 130px;
+    top: 100px;
     margin: auto;
     grid-template: repeat(3, 1fr)  / repeat(2, 2fr);
     background-color: rgba(255, 255, 255, 0.1);
@@ -614,11 +614,8 @@ a{
     width: 1000px;
     position: relative;
     margin: auto; 
-    top: 130px;
+    top: 100px;
     }
-
-#RECAPITULATE div img{
-}
 
 #RECAPITULATE h3{
     font-family: 'Nunito', sans-serif;
