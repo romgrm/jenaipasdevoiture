@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 body{ 
   color: white;
   /* desactiver le scroll dans le body (pas oublier
@@ -32,12 +31,10 @@ body{
     position: absolute;
     left: 30px;
     top: 10px;
-    /* background-color: pink; */
     z-index: 11;
     align-items: center;
     justify-content: center;
     width: 100px;
-
 }
 
 #fb{
@@ -68,7 +65,6 @@ body{
     zoom: 1.05;
 }
 
-
 /*///////////////////////////////////////////////////   NAVBAR  /////////////////////////////////////////////////////////////////////////////////////*/
 
 .navbar{
@@ -83,7 +79,6 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: 900 bold ;    
 }
-
 
 #categories{
     display: flex;
@@ -115,13 +110,10 @@ body{
      
 }
 
-
 /*//////////////////////////////////////////////////////////// ALL SECTIONS /////////////////////////////////////////////////////////*/
 
-
-
 Section{
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 100%; 
     height: 100vh; /* vh = Viewport Height : permet de dimensioner par rapport à la taille de l'écran*/
@@ -129,35 +121,27 @@ Section{
     justify-content: center;
     align-items: center;
     /*SCROLL SNAP ALIGN*/
-    scroll-snap-align: center;
-    
+    scroll-snap-align: center; 
 }
-
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-
-
 #LOCALISATION{
     margin: 0;
-    padding: 0; 
-     
-    
+    padding: 0;    
 }
 
 #LOCALISATION h2{
     position: relative;
-    bottom: 100px;
+    top: 250px; 
     font-family: 'Nunito', sans-serif;
     font-weight: 800 bold ;
     z-index: 9;
-
 }
 
 #LOCALISATION ul{
-    position: relative; 
-    bottom: 30px;
-    /* z-index: 1; */
+    position: relative;
+    top: 350px; 
     display: flex; 
     width: 100%;
     align-items: center;
@@ -203,37 +187,35 @@ Section{
 #SELECTCAR {
     background-color: black;
     z-index: 1000;
-    
 }
 
 #SELECTCAR h1 {
     position: relative; 
-    padding-top: 30px;
-    /* bottom: 50px; */
+    top: 60px;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 30px;
-    z-index: 9;    
+    z-index: 9;   
 }
 
 #SELECTCAR span {
     position: relative;
-    /* bottom: 30px; */
+    top: 80px;
     background-color: #fdad17;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
     border-radius: 20px; 
     padding : 5px 30px;
-    margin: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 20px;
 }
 /*//////////////////////////////////////////    GRID  //////////////////////////////////////////////////////////////////////////////////////////////*/
 .grid{
     display: grid; 
-    height: 700px;
+    /*height: 700px;*/
     width: 1000px;
     position: relative;
-    top: 10px;  
+    top: 130px;
+    margin: auto;
     grid-template: repeat(3, 1fr)  / repeat(2, 2fr);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 30px; 
@@ -246,7 +228,7 @@ a{
 .vehicule1{ 
      transition: transform .5s ease;
      border-radius: 10px;
-     height: 230px; 
+     height: 180px; 
 }
 .vehicule1:hover{   
     background-color: #fdad17;
@@ -256,33 +238,35 @@ a{
 .vehicule1 h3{
     font-family: 'Nunito', sans-serif;
     font-weight: 300 light;
+    font-size: 15px;
 }
-.vehicule1 img{
-    height: 100px;
-    top:10px;
+.vehicule1 .img1{
+    height: 80px;
+    padding-bottom: 5px;
 }
 .vehicule1 ul{
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
+    font-size: 12px;
 }
 .vehicule1 ul .person{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 60px;
-    top: 15px;
+    right: 15px;
+    top: 7px;
 }
 .vehicule1 ul .porte{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 95px;
-    top: 48px;
+    right: 35px;
+    top: 35px;
 }
 
 .vehicule1 ul .boite{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 130px;
-    top: 82px;
+    right: 60px;
+    top: 62px;
 }
 
 .vehicule1 ul{
@@ -295,13 +279,12 @@ a{
     position: relative;
     bottom: 10px;
     padding-bottom: 10px;
-
 }
 /*//////////////////////////////////////////    VEHICULE 2  //////////////////////////////////////////////////////////////////////////////////////////////*/
 .vehicule2{ 
     transition: transform .5s ease;
     border-radius: 10px; 
-    height: 230px; 
+    height: 180px; 
 }
 .vehicule2:hover{   
    background-color: #fdad17;
@@ -311,34 +294,37 @@ a{
 .vehicule2 h3{
     font-family: 'Nunito', sans-serif;
     font-weight: 300 light;
+    font-size: 15px; 
 }
-.vehicule2 img{
-    height: 100px;
+.vehicule2 .img2{
+    height: 80px;
+    padding-bottom: 17px;
 }
 
 .vehicule2 ul{
     position: relative;
     bottom: 30px;
+    font-size: 12px;
 }
 
 .vehicule2 ul .person{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 60px;
-    top: 15px;
+    right: 15px;
+    top: 7px;
 }
 .vehicule2 ul .porte{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 95px;
-    top: 48px;
+    right: 35px;
+    top: 35px;
 }
 
 .vehicule2 ul .boite{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 130px;
-    top: 82px;
+    right: 60px;
+    top: 60px;
 }
 
 .vehicule2 ul{
@@ -351,16 +337,13 @@ a{
     position: relative;
     bottom: 10px;
     padding-bottom: 10px;
-
 }
-
-
 /*//////////////////////////////////////////    VEHICULE 3  //////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .vehicule3{ 
     transition: transform .5s ease;
     border-radius: 10px; 
-    height: 230px; 
+    height: 180px; 
 }
 .vehicule3:hover{   
    background-color: #fdad17;
@@ -370,37 +353,39 @@ a{
 .vehicule3 h3{
     font-family: 'Nunito', sans-serif;
     font-weight: 300 light;
+    font-size: 15px;
 }
-.vehicule3 img{
-    height: 100px;
+.vehicule3 .img3{
+    height: 80px;
+    padding-bottom: 15px;
 }
 .vehicule3 ul{
     position: relative;
     bottom: 30px;
+    font-size:12px;
 }
 .vehicule3 ul .person{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 60px;
-    top: 15px;
+    right: 15px;
+    top: 7px;
 }
 .vehicule3 ul .porte{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 95px;
-    top: 48px;
+    right: 35px;
+    top: 35px;
 }
 
 .vehicule3 ul .boite{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 130px;
-    top: 82px;
+    right: 60px;
+    top: 62px;
 }
 
 .vehicule3 ul{
     list-style: none;
-    
 }
 
 .vehicule3 li{
@@ -408,7 +393,6 @@ a{
     position: relative;
     bottom: 10px;
     padding-bottom: 10px;
-
 }
 
 /*//////////////////////////////////////////    VEHICULE 4  //////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -416,7 +400,7 @@ a{
 .vehicule4{ 
     transition: transform .5s ease;
     border-radius: 10px; 
-    height: 230px; 
+    height: 180px; 
 }
 .vehicule4:hover{   
    background-color: #fdad17;
@@ -426,32 +410,35 @@ a{
 .vehicule4 h3{
     font-family: 'Nunito', sans-serif;
     font-weight: 300 light;
+    font-size: 15px;
 }
-.vehicule4 img{
-    height: 100px;
+.vehicule4 .img4{
+    height: 80px;
+    padding-bottom: 15px;
 }
 .vehicule4 ul{
     position: relative;
     bottom: 30px;
+    font-size: 12px;
 }
 .vehicule4 ul .person{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 60px;
-    top: 15px;
+    right: 15px;
+    top: 7px;
 }
 .vehicule4 ul .porte{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 95px;
-    top: 48px;
+    right: 35px;
+    top: 35px;
 }
 
 .vehicule4 ul .boite{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 130px;
-    top: 82px;
+    right: 50px;
+    top: 60px;
 }
 
 .vehicule4 ul{
@@ -464,7 +451,6 @@ a{
     position: relative;
     bottom: 10px;
     padding-bottom: 10px;
-
 }
 
 /*//////////////////////////////////////////    VEHICULE 5  //////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -472,7 +458,7 @@ a{
 .vehicule5{ 
     transition: transform .5s ease;
     border-radius: 10px; 
-    height: 230px; 
+    height: 180px; 
 }
 .vehicule5:hover{   
    background-color: #fdad17;
@@ -482,32 +468,35 @@ a{
 .vehicule5 h3{
     font-family: 'Nunito', sans-serif;
     font-weight: 300 light;
+    font-size: 15px;
 }
-.vehicule5 img{
-    height: 100px;
+.vehicule5 .img5{
+    height: 80px;
+    padding-bottom: 15px;
 }
 .vehicule5 ul{
     position: relative;
     bottom: 30px;
+    font-size: 12px;
 }
 .vehicule5 ul .person{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 60px;
-    top: 15px;
+    right: 15px;
+    top: 7px;
 }
 .vehicule5 ul .porte{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 95px;
-    top: 48px;
+    right: 35px;
+    top: 35px;
 }
 
 .vehicule5 ul .boite{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 130px;
-    top: 82px;
+    right: 60px;
+    top: 62px;
 }
 
 .vehicule5 ul{
@@ -520,16 +509,14 @@ a{
     position: relative;
     bottom: 10px;
     padding-bottom: 10px;
-
 }
-
 
 /*//////////////////////////////////////////    VEHICULE 6  //////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .vehicule6{ 
     transition: transform .5s ease;
     border-radius: 10px; 
-    height: 230px; 
+    height: 180px; 
 }
 .vehicule6:hover{   
    background-color: #fdad17;
@@ -539,32 +526,35 @@ a{
 .vehicule6 h3{
     font-family: 'Nunito', sans-serif;
     font-weight: 300 light;
+    font-size: 15px;
 }
-.vehicule6 img{
-    height: 100px;
+.vehicule6 .img6{
+    height: 80px;
+    padding-bottom: 15px;
 }
 .vehicule6 ul{
     position: relative;
     bottom: 30px;
+    font-size: 12px; 
 }
 .vehicule6 ul .person{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 60px;
-    top: 15px;
+    right: 15px;
+    top: 7px;
 }
 .vehicule6 ul .porte{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 95px;
-    top: 48px;
+    right: 35px;
+    top: 35px;
 }
 
 .vehicule6 ul .boite{
-    height: 30px; 
+    height: 15px; 
     position: relative;
-    right: 130px;
-    top: 82px;
+    right: 60px;
+    top: 60px;
 }
 
 .vehicule6 ul{
@@ -582,69 +572,109 @@ a{
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
-
 #SELECTCAR{
     background-color: black;
     z-index: 9;
 }
-
-/* #SELECTCAR h2{ */
-    /* background-color: red;  */
-    /* z-index: 9; */
-/* } */
-
 #SELECTCAR p{
     z-index: 9;
 }
 
-
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
 
 #RECAPITULATE{
-    background-color: black; 
-    z-index: 9;
+    background-color: black;
+    z-index: 1000;
 }
 
-#RECAPITULATE h2{
-    z-index: 9;
+#RECAPITULATE h1{
+    position: relative; 
+    top: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    z-index: 9;   
+
 }
 
-#RECAPITULATE p{
-    z-index: 9;
+#RECAPITULATE span{
+    position: relative;
+    top: 80px;
+    background-color: #fdad17;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    border-radius: 20px; 
+    padding : 5px 30px;
+    font-size: 20px;
+}
+#RECAPITULATE div{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    height: 500px;
+    width: 1000px;
+    position: relative;
+    margin: auto; 
+    top: 130px;
+    }
+
+#RECAPITULATE div img{
 }
 
+#RECAPITULATE h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600 light;
+    font-size: 25px;
+}
+
+#RECAPITULATE ul{
+    position: relative;
+    bottom: 20px;
+    font-family: 'Thasadith', sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+#RECAPITULATE ul li{
+   margin-bottom: 10px; 
+}
+#RECAPITULATE ul .person{
+    height: 30px; 
+    position: relative;
+    right: 35px;
+    top: 32px;
+}
+#RECAPITULATE ul .porte{
+    height: 30px; 
+    position: relative;
+    right: 70px;
+    top: 70px;
+}
+
+#RECAPITULATE ul .boite{
+    height: 30px; 
+    position: relative;
+    right: 105px;
+    top: 105px;
+}
+
+#RECAPITULATE div button {
+    border-radius: 30px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding : 5px 30px;
+    background-color: #fdad17;
+}
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-/*
-#LOCALISATION img{
-    position: fixed;
-    top: 300px; 
-    /*top: 80px; 
-     
-    margin: 0; 
-    padding: 0;
-    z-index: 0;
-}*/
-
-
-
-
 footer{
     position: absolute;
     bottom: 0; 
     width: 100%;
     font-family: 'Nunito', sans-serif;
     font-weight: 900 bold ;    
-    /* z-index: 10000; */
     display: flex; 
     justify-content: center;
     align-items: center; 
-    
-   
 }
 
 footer a {
@@ -652,57 +682,56 @@ footer a {
 
 }
 
-
 #bmw{
     position: fixed;
     right: 0px;
     z-index: 0;
     width: 500px;
-    height: 800px;
-
-    
+    height: 800px; 
 }
-
 
 /*////////////////////////////////////////////////////////////// IPAD /////////////////////////////////////////////////////////////////*/
 @media all and (max-width: 1025px){
-    #LOCALISATION h2{
-        bottom:200px;
-        color:blue; 
-    }
-    #LOCALISATION ul{
-        display: flex; 
-        flex-direction: row;
-        bottom: 50px; 
-    }
-
     #SELECTCAR{
        display: block;
-    }
-    #SELECTCAR h1 { 
-        padding-top: 60px;
-        padding-bottom: 15px;
-    }
-    #SELECTCAR .grid{
-        margin: auto;
-    }
-}
-/*////////////////////////////////////////////////////////////// SMARTPHONE CLASSIC /////////////////////////////////////////////////////////////////*/
-@media all and (max-width: 900px){
-   
-/*///////////////// HOME //////////////*/   
+    } 
     
+    #SELECTCAR .grid{
+        top: 120px; 
+        margin: auto ;
+        height: 600px;
+        width: 600px;
+        margin-bottom: 10px;
+    }
+
+    #RECAPITULATE div{
+       max-width: 650px;  
+    }
+
+    footer{
+        position: absolute;
+    }   
+}
+
+/*////////////////////////////////////////////////////////////// SMARTPHONE CLASSIC /////////////////////////////////////////////////////////////////*/
+@media all and (max-width: 700px){
+
+/*HOME */ 
+   
     #LOCALISATION h2{
         position: relative;
-        padding-top: 100px; 
+        top:200px;  
         margin-bottom: 1px; 
-        
         font-size: 20px;
     }
 
-    #LOCALISATION ul{
-        display: contents;
-        align-items: center;
+    #LOCALISATION ul {
+        display: block;
+        top: 300px;
+       }
+    
+    #LOCALISATION ul li{
+        margin: 20px auto 20px auto;
     }
     
     #bmw{
@@ -725,14 +754,14 @@ footer a {
         font-size: 10px;
     }
 
-    /*/////////////////////VEHICULES/////////*/
+    /*VEHICULES*/
 
     #SELECTCAR{
         display: block;
     }
+    
     #SELECTCAR h1 { 
-        padding-top: 60px;
-        padding-bottom: 15px;   
+           
         font-family: 'Nunito', sans-serif;
         font-weight: 600;
         font-size: 20px;
@@ -750,9 +779,9 @@ footer a {
         display: grid; 
         height: 600px;
         min-height: 300px;
-        width: 300px; 
         margin: auto; 
         position: relative;
+        top: 100px;
         grid-gap: 10px;
         grid-template: repeat(3, 1fr)  / repeat(2, 1fr);
         grid-template-rows: 200px 200px 200px;
@@ -796,28 +825,40 @@ footer a {
         top: 55px;
     }
 
+    #RECAPITULATE{
+        display: block;
+    }
+
+    #RECAPITULATE div{
+    
+        max-width: 400px; 
+    }
+    #RECAPITULATE h1{
+        font-size: 20px;
+    }
+    
+    #RECAPITULATE span{
+        font-size: 12px;
+    }
+
+    #RECAPITULATE h3{
+        font-size: 25px;
+    }
     
     
 }
 /*////////////////////////////////////////////////////////////// SMARTPHONE PETIT ECRAN /////////////////////////////////////////////////////////////////*/
-@media all and (max-height: 700px){
-    #LOCALISATION h2{
-        font-size: 15px;
-        bottom: 30px;
-    }
+   @media all and (max-width: 645px){
+   
     .grid{
-    height: 400px;
-    grid-template-rows: 133px 133px 133px;
+        position: relative;
+        margin: auto; 
+        grid-template: repeat(3, 1fr)  / repeat(1, 1fr);
+        max-width: 400px;
+        
     }
+   }
 
-    .grid ul{
-        padding-top: 10px;
-    }
-
-    footer{
-        font-size: 7px;
-    }
-}
 
 
 
